@@ -1,4 +1,4 @@
-# Ex.No: 13 – MiniProject learning AI
+# Ex.No: 13 – MiniProject learning AI (MEDICAL COST PREDICTOR PROJECT)
 ### DATE: 25/10/2025                                                                         
 ### REGISTER NUMBER : 212223040120
 
