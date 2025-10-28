@@ -76,8 +76,10 @@ plt.ylabel('Charges ($)', fontsize=12)
 plt.legend(fontsize=12)
 plt.show()
 ```
+
 ### Output:
 <img width="1776" height="664" alt="image" src="https://github.com/user-attachments/assets/201b9732-da3b-4a71-99fe-e765be79a9e9" />
+
 ```
 plt.figure(figsize=(25, 8))
 sns.scatterplot(x='bmi', y='charges', data=df, hue='smoker', palette='coolwarm', s=100)
@@ -87,8 +89,10 @@ plt.ylabel('Charges ($)', fontsize=12)
 plt.legend(fontsize=12)
 plt.show()
 ```
+
 ### Output:
 <img width="1776" height="676" alt="image" src="https://github.com/user-attachments/assets/f1c48f95-d034-4dad-8d1d-22ae5a12668b" />
+
 ```
 # Convert categorical columns into dummy/indicator variables
 df_processed = pd.get_dummies(df, columns=['sex', 'smoker', 'region'], drop_first=True)
@@ -97,8 +101,10 @@ df_processed = pd.get_dummies(df, columns=['sex', 'smoker', 'region'], drop_firs
 print("--- Processed Data Head ---")
 print(df_processed.head())
 ```
+
 ### Output:
 <img width="1234" height="403" alt="image" src="https://github.com/user-attachments/assets/a44993c9-c134-410b-8283-aa8e0bcf1544" />
+
 ```
 # Our target (y) is what we want to predict
 y = df_processed['charges']
@@ -134,8 +140,10 @@ plt.ylabel('Predicted Charges ($)', fontsize=12)
 plt.grid(True)
 plt.show()
 ```
+
 ### Output:
 <img width="1754" height="662" alt="image" src="https://github.com/user-attachments/assets/afe72150-1775-4e6b-8424-3bb7558e98f2" />
+
 ```
 # --- Graph 5: Residuals Plot ---
 
@@ -155,6 +163,7 @@ plt.ylabel('Residuals ($)', fontsize=12)
 plt.grid(True)
 plt.show()
 ```
+
 ### Output:
 <img width="1752" height="646" alt="image" src="https://github.com/user-attachments/assets/7d1f4a01-d6e9-4178-8a1b-4831adbe6f6d" />
 
@@ -184,6 +193,7 @@ importance_df = pd.DataFrame({'Feature': features, 'Importance': importances})
 importance_df = importance_df.sort_values(by='Importance', ascending=False)
 print(importance_df)
 ```
+
 ### Output:
 <img width="1215" height="580" alt="image" src="https://github.com/user-attachments/assets/e519ad39-6d77-4e9f-b013-a498fe710d3b" />
 
