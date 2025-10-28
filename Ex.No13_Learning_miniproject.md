@@ -63,8 +63,10 @@ plt.xlabel('Charges ($)', fontsize=12)
 plt.ylabel('Frequency', fontsize=12)
 plt.show()
 ```
+
 ### Output:
 <img width="1767" height="682" alt="image" src="https://github.com/user-attachments/assets/3b519274-fa38-42c0-a8be-01ca11be77de" />
+
 ```
 plt.figure(figsize=(30, 8))
 sns.scatterplot(x='age', y='charges', data=df, hue='smoker', palette='bright', s=100)
