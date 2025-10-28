@@ -1,4 +1,4 @@
-# Ex.No: 10 Learning – Use Supervised Learning  
+# Ex.No: 13 – MiniProject learning AI
 ### DATE: 25/10/2025                                                                         
 ### REGISTER NUMBER : 212223040120
 
